@@ -1,0 +1,135 @@
+body {
+  padding: 0; /* Menghapus semua padding default dari elemen <body>. */
+  margin: 0; /* Menghapus semua margin default dari elemen <body>. */
+  font-family: "Oswald", sans-serif; /* Mengatur jenis font menjadi "Oswald" dan alternatif "sans-serif" jika "Oswald" tidak tersedia. */
+}
+
+h1 {
+  color: #00af3a; /* Memberikan warna hijau (#00af3a) pada teks. */
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 1); /* Memberikan bayangan hitam (rgba) pada teks dengan posisi horizontal 4px, vertikal 4px, blur 6px. */
+}
+
+h2,
+h3 {
+  color: #00af3a; /* Memberikan warna hijau (#00af3a) pada teks. */
+  text-shadow: 2px 2px 8px rgba(173, 255, 47, 1); /* Memberikan bayangan hijau terang (rgba) pada teks dengan posisi horizontal 2px, vertikal 2px, blur 8px. */
+}
+
+footer {
+  padding: 20px; /* Menambahkan ruang di dalam elemen footer sebesar 20 piksel di semua sisi. */
+  color: white; /* Memberikan warna putih pada teks di dalam footer. */
+  background-color: #00af3a; /* Memberikan warna latar belakang hijau (#00af3a) pada elemen footer. */
+  text-align: center; /* Mengatur teks di dalam footer agar rata tengah secara horizontal. */
+  font-weight: bold; /* Membuat teks di dalam footer menjadi tebal. */
+}
+
+nav a {
+  font-size: 18px; /* Mengatur ukuran teks untuk elemen link <a> menjadi 18 piksel. */
+  font-weight: 400; /* Mengatur ketebalan font menjadi normal (400). */
+  text-decoration: none; /* Menghapus garis bawah default pada elemen link <a>. */
+  color: white; /* Memberikan warna putih pada teks elemen link <a>. */
+}
+
+nav a:hover {
+  font-weight: bold; /* Mengubah ketebalan font menjadi tebal saat elemen link <a> di-hover oleh pengguna. */
+}
+
+.profile header {
+  text-align: center; /* Mengatur teks di dalam elemen header profil agar rata tengah secara horizontal. */
+}
+
+.image {
+  width: 100%; /* Mengatur lebar elemen gambar agar 100% dari lebar elemen induknya. */
+  max-height: 300px; /* Membatasi tinggi maksimum gambar menjadi 300 piksel. */
+  object-fit: cover; /* Menyesuaikan gambar agar menutupi area elemen tanpa distorsi. */
+  object-position: center; /* Memusatkan posisi gambar dalam elemen jika dipotong. */
+}
+
+.profile img {
+  width: 100%; /* Mengatur lebar gambar di dalam elemen profil agar 100% dari elemen induknya. */
+  max-height: 300px; /* Membatasi tinggi maksimum gambar di profil menjadi 300 piksel. */
+  object-fit: cover; /* Menyesuaikan gambar agar menutupi area elemen tanpa distorsi. */
+  object-position: center; /* Memusatkan posisi gambar dalam elemen jika dipotong. */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Memberikan bayangan halus di sekitar elemen untuk efek mengangkat. */
+  border-radius: 5px; /* Membuat sudut elemen menjadi melengkung dengan radius 5 piksel. */
+  padding: 15px; /* Menambahkan ruang di dalam elemen sebesar 15 piksel di semua sisi. */
+  margin-top: 15px; /* Menambahkan jarak luar sebesar 15 piksel di atas elemen. */
+}
+
+.jumbotron {
+  font-size: 20px; /* Mengatur ukuran teks di dalam elemen jumbotron menjadi 20 piksel. */
+  padding: 60px; /* Menambahkan ruang di dalam elemen sebesar 60 piksel di semua sisi. */
+  background-color: #a9ff6f; /* Memberikan warna latar belakang hijau terang (#a9ff6f) pada elemen jumbotron. */
+  text-align: center; /* Mengatur teks di dalam elemen jumbotron agar rata tengah secara horizontal. */
+}
+
+nav ul {
+  padding-inline: 4rem; /* Menambahkan ruang horizontal sebesar 4rem di kiri dan kanan elemen daftar <ul>. */
+  display: flex; /* Mengatur elemen daftar <ul> menjadi fleksibel (flexbox). */
+  gap: 2rem; /* Menambahkan jarak antar elemen daftar sebesar 2rem. */
+}
+
+nav li {
+  list-style-type: none; /* Menghapus simbol daftar bawaan pada elemen <li>. */
+}
+
+nav {
+  padding: 5px; /* Menambahkan ruang di dalam elemen nav sebesar 5 piksel di semua sisi. */
+  background-color: #409f00; /* Memberikan warna latar belakang hijau tua (#409f00) pada elemen nav. */
+  position: sticky; /* Membuat elemen nav tetap menempel di bagian atas layar saat di-scroll. */
+  top: 0; /* Menentukan posisi elemen sticky pada bagian atas layar. */
+  z-index: 1000; /* Mengatur elemen agar berada di depan elemen lainnya. */
+}
+
+main {
+  padding: 20px; /* Menambahkan ruang di dalam elemen utama sebesar 20 piksel di semua sisi. */
+  display: flex; /* Mengatur elemen utama menjadi fleksibel (flexbox). */
+  gap: 1.5rem; /* Menambahkan jarak antar elemen di dalam elemen utama sebesar 1.5rem. */
+}
+
+#content {
+  flex: 5; /* Memberikan elemen ini 5 kali porsi ruang dibandingkan elemen lain di flex container. */
+  display: flex; /* Mengatur elemen di dalam #content menjadi fleksibel (flexbox). */
+  flex-flow: column nowrap; /* Mengatur elemen di dalam #content berurutan secara vertikal (column). */
+  gap: 1rem 2rem; /* Menambahkan jarak vertikal sebesar 1rem dan horizontal 2rem antar elemen. */
+}
+
+aside {
+  flex: 1; /* Memberikan elemen aside porsi ruang sebesar 1 kali dibandingkan elemen lainnya di flex container. */
+}
+
+header {
+  display: inline; /* Menampilkan elemen header sebagai elemen inline. */
+}
+
+.buatan {
+  color: white; /* Memberikan warna putih pada teks elemen dengan class "buatan". */
+  text-shadow: none; /* Menghapus bayangan teks pada elemen dengan class "buatan". */
+  font-size: 14px; /* Mengatur ukuran teks elemen dengan class "buatan" menjadi 14 piksel. */
+}
+
+.slideshow {
+  position: relative; /* Mengatur elemen slideshow relatif terhadap elemen induknya. */
+  width: 100%; /* Mengatur lebar elemen slideshow agar 100% dari lebar elemen induknya. */
+  height: auto; /* Membuat tinggi elemen slideshow menyesuaikan kontennya. */
+  overflow: hidden; /* Memotong konten yang melampaui batas elemen. */
+}
+
+.istana {
+  display: none; /* Menyembunyikan elemen dengan class "istana" secara default. */
+  width: 100%; /* Mengatur lebar elemen dengan class "istana" agar 100% dari lebar elemen induknya. */
+}
+
+.animate {
+  opacity: 0; /* Membuat elemen sepenuhnya transparan secara default. */
+  transform: translateY(50px); /* Menggeser elemen ke bawah sejauh 50 piksel. */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Menambahkan efek transisi pada opacity dan posisi elemen. */
+}
+
+.animate.active {
+  opacity: 1; /* Membuat elemen sepenuhnya terlihat. */
+  transform: translateY(0); /* Mengembalikan elemen ke posisi awal. */
+}
